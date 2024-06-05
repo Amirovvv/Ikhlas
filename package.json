@@ -1,12 +1,14 @@
 {
   "name": "ikhlasapp",
-  "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "dependencies": {
     "@twa-dev/sdk": "^7.0.0",
@@ -15,7 +17,9 @@
     "vue3-lottie": "^3.3.0"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.20.0",
     "@vitejs/plugin-vue": "^5.0.4",
+    "eslint": "^8.57.0",
     "sass": "^1.77.4",
     "typescript": "^5.2.2",
     "vite": "^5.2.0",

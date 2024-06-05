@@ -1,15 +1,15 @@
-import WebApp from '@twa-dev/sdk';
+import WebApp from '@twa-dev/sdk'
 
 interface useTelegramType {
-  ready: () => void;
+  ready: () => void
 }
 
 export default function useTelegram(): useTelegramType {
   function ready(): void {
-    WebApp.ready();
+    WebApp.ready()
   }
 
   return {
-    ready
+    ready,
   }
 }

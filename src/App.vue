@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import { useTelegram } from '@/composables';
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
+import { useTelegram } from '@/composables'
 
 const { ready } = useTelegram()
 
 onMounted(() => {
   ready()
-});
+})
 </script>
 
 <template>
