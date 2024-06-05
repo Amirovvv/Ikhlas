@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useTelegram } from '@/services';
+import { useTelegram } from '@/composables';
 import { onMounted } from 'vue';
 
 const { ready } = useTelegram()
